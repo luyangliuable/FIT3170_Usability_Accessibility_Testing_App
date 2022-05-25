@@ -1,0 +1,117 @@
+.container-nav {
+    padding: 150px;
+    background-color: #0d0d0d;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+    margin: 0px !important;
+    
+    max-height: 100vh !important;
+    overflow-y: auto;
+}
+
+.login-root {
+    height: 570px;
+    width: 1224px;
+    align-self: center;
+    margin: auto;
+}
+
+.login-div-group-white {
+    
+    display: inline-flex;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.login-col {
+    display: flex;
+    padding: 50px;
+}
+
+.button {
+    border-width: 0px !important;
+    background-color: #1C7497 !important;
+    color: #F2F2F2 !important;
+    text-align: center; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.image-col {
+    display: flex;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./hero.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: -1px;
+}
+
+.login-title {
+    padding: 20px;
+    font-size: 180px;
+}
+
+.login {
+   font-size: 42px !important;
+   font-weight: 500 !important;
+   text-align: center;
+}
+
+Form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-forgot-pd {
+    padding-top: 4px;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+.form-div-1 {
+    padding: 15px;
+}
+
+.form-div-2 {
+    padding: 15px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+
+.form-div-0, .form-div-1, .form-div-2 {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.input {
+    background-color: #C0D2DB;
+    filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.09));
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.new-user {
+    padding: 15px;
+    margin: 0 auto;
+    color: #0d0d0d;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}

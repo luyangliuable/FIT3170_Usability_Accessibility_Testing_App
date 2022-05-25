@@ -1,0 +1,116 @@
+version: '3.8'
+
+services:
+  flask_backend:
+    build:
+      context: ./server/
+    image: bxer.flask_backend
+    container_name: bxer.flask_backend
+    ports:
+      - 5005:5000
+    command: python3 manage.py run -h 0.0.0.0
+    volumes:
+      - .:/usr/src/FIT3170_Usability_Accessibility_Testing_App/
+    environment:
+      - FLASK_DEBUG=1
+      - APP_SETTINGS=config.DevelopmentConfig
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - REDIS_URL=redis://redis:6379/0
+      - MONGO_URL=mongodb://localhost:27017/
+      - jadx=/tools/jadx
+      - android_emulator=0.0.0.0:5555
+      - apk_tool=/tools/apktool_2.4.1.jar
+      - ic3=/tools/ic3-0.2.0
+    depends_on:
+      - redis
+      - mongodb
+
+  react_ui:
+    build:
+      context: ./Website
+    container_name: react-ui
+    ports:
+      - "3001:3001"
+    container_name: bxer.react-ui
+    stdin_open: true
+    volumes:
+       - .:/usr/src/FIT3170_Usability_Accessibility_Testing_App/Website
+       - .:/usr/src/FIT3170_Usability_Accessibility_Testing_App/Website/node_modules
+
+  worker:
+    build:
+      context: ./server/
+    command: celery worker --app=tasks.celery --loglevel=info
+    container_name: bxer.task_queue
+    volumes:
+      - .:/usr/src/FIT3170_Usability_Accessibility_Testing_App/
+    environment:
+      - FLASK_DEBUG=1
+      - APP_SETTINGS=server.config.DevelopmentConfig
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - REDIS_URL=redis://redis:6379/0
+      - MONGO_URL=mongodb://username:password@mongodb
+    depends_on:
+      - flask_backend
+      - redis
+
+  mongodb:
+    tty: true
+    image: mongo:5.0
+    container_name: bxer.mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - .:/data/mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=username
+      - MONGO_INITDB_ROOT_PASSWORD=password
+
+  
+  redis:
+    ports:
+      - 6379:6379
+    container_name: bxer.redis
+    image: redis:6-alpine
+  
+  localstack:
+    image: localstack/localstack:0.14.3
+    container_name: bxer.localstack
+    ports:
+      - '4563-4599:4563-4599'
+      - '8055:8080'
+    environment:
+      - SERVICES=s3
+      - DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+    volumes:
+      - './.localstack:/tmp/localstack'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+
+  storydistiller:
+    image: trevinwadu/bxer:storydistiller
+    container_name: bxer.storydistiller
+    ports:
+      - '3002:3002'
+    environment:
+      - S3_URL=http://host.docker.internal:4566
+      - STORYDISTILLER_EMULATOR=host.docker.internal:5555
+
+  xbot:
+    image: trevinwadu/bxer:xbot
+    container_name: bxer.xbot
+    ports:
+      - '3003:3003'
+    environment:
+      - S3_URL=http://host.docker.internal:4566
+      - XBOT_EMULATOR=host.docker.internal:5557
+
+  owleye:
+    image: trevinwadu/bxer:owleye
+    container_name: bxer.owleye
+    ports:
+      - '3004:3004'
+    environment:
+    - S3_URL=http://host.docker.internal:4566

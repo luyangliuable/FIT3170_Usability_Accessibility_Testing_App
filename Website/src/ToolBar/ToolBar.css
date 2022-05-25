@@ -1,0 +1,27 @@
+.nav-container {
+    padding: 30px;
+    background-color: #0d0d0d;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto !important;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+
+.company-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-bar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}

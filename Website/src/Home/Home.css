@@ -1,0 +1,19 @@
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./hero.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+h1 {
+    font-weight: 600 !important;
+}

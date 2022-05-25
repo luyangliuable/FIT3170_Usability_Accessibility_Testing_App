@@ -1,0 +1,6 @@
+flask
+pymongo
+celery==4.4.7
+flower==0.9.7
+redis==3.5.3
+python-dotenv

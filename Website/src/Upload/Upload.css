@@ -1,0 +1,127 @@
+.container-nav {
+    padding: 150px;
+    background-color: #0d0d0d;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+    margin: 0px !important;
+
+    max-height: 100vh !important;
+    overflow-y: auto;
+}  
+  
+  .upload-root{
+    width: 1224px;
+    align-self: center;
+    margin: auto;
+    display: block;
+  }
+
+  .upload-align-left {
+      margin-left: 0px;
+      margin-right: auto;
+  }
+
+  .upload-align-right {
+      margin-left: auto;
+      margin-right: 0px;
+  }
+
+  .upload-div-group-white {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    background-color: #F2F2F2;
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .upload-vspacing-40 {
+      padding-top: 40px;
+      width: 100%;
+      display: inline-flex
+  }
+
+  .upload-div-vcenter {
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+
+  .upload-text-60 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: Lato;
+    line-height: auto;
+    color: #f2f2f2;
+  }
+  .upload-text-48 {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 48px;
+    font-family: Lato;
+    line-height: auto;
+    color: #ffffff;
+  } 
+  
+  .upload-text-36 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 36px;
+    font-family: Lato;
+    line-height: auto;
+    color: #ffffff;
+  } 
+  
+  .upload-text-30 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 30px;
+    font-family: Lato;
+    line-height: auto;
+    color: #ffffff;
+  }
+
+  .upload-text-center {
+    text-align: center;
+  }
+
+  .upload-text-dark {
+    color: #0d0d0d;
+  }
+
+  .upload-full-width {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .upload-div-full {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  
+  .upload-div-mid {
+    min-width: 50%;
+    width: 50%;
+    max-width: 50%;
+    align-content: top;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .upload-side-padding-120 {
+      padding-left: 120px;
+      padding-right: 120px;
+  }
+
+  .upload-side-padding-40 {
+      padding-left: 40px;
+      padding-right: 40px;
+  }

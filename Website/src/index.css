@@ -1,0 +1,40 @@
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+h2 {
+  font-size: 26px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+  color: #F2F2F2;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* look into */ overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  background-color: #0d0d0d;
+  scroll-behavior: smooth;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none !important;
+}

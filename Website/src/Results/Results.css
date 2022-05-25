@@ -1,0 +1,70 @@
+.container-nav {
+    padding: 150px;
+    background-color: #0d0d0d;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+    margin: 0px !important;
+
+    max-height: 100vh !important;
+    overflow-y: auto;
+}  
+  
+  .results-root{
+    width: 1224px;
+    align-self: center;
+    margin: auto;
+    display: block;
+  }
+
+  .results-vspacing-40 {
+    padding-top: 40px;
+    width: 100%;
+    display: inline-flex
+  }
+
+  .results-text-60 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: Lato;
+    line-height: auto;
+    color: #f2f2f2;
+  }
+
+  .results-text-48 {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 48px;
+    font-family: Lato;
+    line-height: auto;
+    color: #ffffff;
+  } 
+
+  .results-text-30 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 30px;
+    font-family: Lato;
+    line-height: auto;
+    color: #ffffff;
+  }
+
+  .results-text-center {
+    text-align: center;
+  }
+
+  .results-full-width {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .results-div-full {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+  }

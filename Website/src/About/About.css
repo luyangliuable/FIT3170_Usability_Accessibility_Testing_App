@@ -1,0 +1,76 @@
+.container-nav {
+    padding: 150px;
+    background-color: #0d0d0d;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+    margin: 0px !important;
+    
+    max-height: 100vh !important;
+    overflow-y: auto;
+}  
+  
+  .about-root{
+    width: 1224px;
+    align-self: center;
+    margin: auto;
+  }
+
+  .about-text-60 {
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 32px;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: Lato;
+    line-height: auto;
+    color: #f2f2f2;
+  }
+  .about-text-48 {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 48px;
+    font-family: Lato;
+    line-height: auto;
+    color: #ffffff;
+  }
+  
+  .about-text-30 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 30px;
+    font-family: Lato;
+    line-height: auto;
+    color: #ffffff;
+  }
+
+  .about-text-20 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: Lato;
+    line-height: auto;
+    color: #e5e5e5;
+  }
+
+  .about-img-600-440 {
+    height: 440px;
+    width: 600px;
+  }
+  .about-img-520-380 {
+    height: 380px;
+    width: 520px;
+  }
+
+  .about-div-mid {
+      min-width: 50%;
+      width: 50%;
+      max-width: 50%;
+      align-content: center;
+      display: inline-flex;
+  }
+
+  .about-vspacing-40 {
+      padding-top: 40px;
+      width: 100%;
+      display: inline-flex
+  }
