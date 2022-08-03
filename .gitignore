@@ -131,7 +131,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#vscode 
+#vscode
 .vscode
 .idea
 
@@ -141,3 +141,4 @@ dmypy.json
 .localstack
 
 node_modules
+.localstack/data/startup_info.json

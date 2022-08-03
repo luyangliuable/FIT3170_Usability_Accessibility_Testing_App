@@ -21,7 +21,7 @@ export default function ToolBar() {
             </Col>
               <Col className="nav-center">
                 <Link to={"./upload"}>
-                  <h3>UPLOAD APK</h3>  
+                  <h3>UPLOAD FILE</h3>  
                 </Link>  
               </Col>
               <Col className="nav-center">

@@ -1,5 +1,4 @@
-import React, { Component, useState, useCallback, useEffect } from 'react'
-import { Container } from "react-bootstrap";
+import React, { useState } from 'react'
 
 import "./Results.css"
 

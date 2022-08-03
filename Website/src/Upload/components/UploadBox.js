@@ -1,6 +1,5 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
-import superagent from 'superagent';
 
 import "./ResultBox.css";
 

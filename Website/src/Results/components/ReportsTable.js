@@ -7,7 +7,7 @@ export default function ReportsTable({ image, issues, app }) {
         <>
             <h2 style={{color:"white"}}>{app}</h2>
             <div id="report">
-                <img id='report_img' src={image} alt="issue image" />
+                <img id='report_img' src={image} alt="issue" />
                 <p>
                     {
                         issues.map((issue) => (

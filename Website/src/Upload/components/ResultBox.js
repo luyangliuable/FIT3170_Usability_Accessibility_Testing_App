@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import "./ResultBox.css"
 
 const ResultBox = ({ resultFiles, updateResultFiles, currentAppStatus, updateCurrentAppStatus }) => {

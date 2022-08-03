@@ -30,7 +30,6 @@ services:
   react_ui:
     build:
       context: ./Website
-    container_name: react-ui
     ports:
       - "3001:3001"
     container_name: bxer.react-ui
@@ -69,13 +68,13 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=username
       - MONGO_INITDB_ROOT_PASSWORD=password
 
-  
+
   redis:
     ports:
       - 6379:6379
     container_name: bxer.redis
     image: redis:6-alpine
-  
+
   localstack:
     image: localstack/localstack:0.14.3
     container_name: bxer.localstack
